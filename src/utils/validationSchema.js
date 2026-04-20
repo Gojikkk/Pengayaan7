@@ -1,4 +1,4 @@
-import * as Yup from 'yup';
+import * as Yup from 'yup'
 
 //schema login validation
 export const loginSchema = Yup.object().shape({
@@ -6,13 +6,13 @@ export const loginSchema = Yup.object().shape({
     .email('Format email tidak valid')
     .required('Email wajib diisi'),
 
-    password: Yup.sring()
+    password: Yup.string()
     .min(6, 'Password minimal 6 karakter')
     .required('password wajib diisi'),
 });
 
 //schema register validation
-export const regiserSchema = Yup.object().shape({
+export const registerSchema = Yup.object().shape({
     name: Yup.string()
     .min(3, 'Nama minimal berisi 3 karakter')
     .max(50, "Nama maksimal berisi 50 karakter")

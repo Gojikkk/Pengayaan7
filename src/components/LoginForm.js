@@ -1,4 +1,4 @@
-import {view, Text, TextInput, StyleSheet} from 'react-native';
+import {View, Text, TextInput, StyleSheet} from 'react-native';
 
 export function LoginForm({ label, error, touched, style, ...rest}) {
 
@@ -38,12 +38,12 @@ const styles = StyleSheet.create({
         color: '#222'
     },
     inputError: {
-        borderColor: #E53E3E,
+        borderColor: '#E53E3E',
         backgroundColor: '#FFF5F5',
     },
     errorText: {
         fontSize: 12, 
-        color: #E53E3E,
+        color: '#E53E3E',
         marginTop: 5
     }
 })
